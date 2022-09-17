@@ -221,7 +221,7 @@ class Home:
 		print(Color.LR+"["+Color.LG+"04"+Color.LR+"]"+Color.LC+" CRINGE")
 		print(Color.LR+"["+Color.LG+"HOME"+Color.LR+"]"+Color.LC+" TRỞ LẠI")
 		print("\n")
-		http_proxy = "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all"
+		http_proxy = "https://www.proxy-list.download/api/v1/get?type=http&anon=elite&country=US"
 		while True:
 			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+" nguyencaosang "+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
