@@ -15,7 +15,7 @@
 
 * Vào CH Play Hoặc Appstore Tải Google Cloud Để Chạy Tool Nhé!
 
-* ```git clone https://github.com/panusav1/panusa-tool```
+* ```git clone https://github.com/panusav1/panusa-ncs```
 * ```cd panusa-ncs```
 * ```sh start.sh```
 * ```layer7```
